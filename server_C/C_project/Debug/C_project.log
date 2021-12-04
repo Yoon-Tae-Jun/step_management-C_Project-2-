@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\user\source\repos\C_project\C_project\main.c(169,42): warning C4133: '함수': 'NODE *'과(와) 'LIST *' 사이의 형식이 호환되지 않습니다.
+C:\Users\user\source\repos\C_project\C_project\main.c(169,44): warning C4020: 'input_Node': 실제 매개 변수가 너무 많습니다.
+  C_project.vcxproj -> C:\Users\user\source\repos\C_project\Debug\C_project.exe
