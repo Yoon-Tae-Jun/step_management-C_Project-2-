@@ -142,8 +142,6 @@
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\..\OneDrive - sch.ac.kr\바탕 화면\fitbit_result\results_calories.txt" />
-    <Text Include="..\..\..\..\OneDrive - sch.ac.kr\바탕 화면\fitbit_result\results_distance.txt" />
     <Text Include="..\..\..\..\OneDrive - sch.ac.kr\바탕 화면\fitbit_result\results_stpes.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

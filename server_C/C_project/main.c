@@ -166,7 +166,7 @@ int main() {
                     Send_Data(&clientSocket, Buffer,Buffer2);
                     Recv_Data(&clientSocket, Buffer);
                     data.steps = atoi(Buffer);
-                    input_Node(data, head, &list);
+                    input_Node(data, &list);
                     Print_Data(head);
                     printf("<--추가 완료-->\n");
                 }
