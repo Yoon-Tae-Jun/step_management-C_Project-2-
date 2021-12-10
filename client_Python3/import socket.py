@@ -10,7 +10,7 @@ from PyQt5.QtCore import *
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
-import calendar
+
 
 
 #UI 파일 연결
@@ -99,6 +99,7 @@ class main_Window(QMainWindow, main_UI):
     
         self.date_text.setText(date)
         self.today_text.setText(today)
+        self.goal_step.setText(str(int(today)+100))
         self.week_text.setText(str(int(today)-round(float(week_average))))
         self.total_text.setText(str(int(today)-round(float(total_average))))
         self.plus_date_text.setText(datetime.today().strftime('%Y-%m-%d'))
@@ -108,7 +109,13 @@ class main_Window(QMainWindow, main_UI):
         values = [float(total_average),int(today), float(week_average)]
         plt.bar(x, values, color=['r','g','b'], width=0.3, edgecolor='lightgray')
         plt.xticks(x, years)
-
+        
+        for i, v in enumerate(x):
+            plt.text(v, values[i], values[i],                
+                    fontsize = 9, 
+                    color='black',
+                    horizontalalignment='center',  
+                    verticalalignment='bottom')    
         #plt.show()
         plt.savefig('plot.png')
         img = Image.open('plot.png')
